@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="lab16.2.css" />
+    <title>Lab 16.2</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <h5 id="decription">
+      Thank you for taking the time to help us improve the platform
+    </h5>
+
+    <section class="container">
+      <!-- Input Form -->
+      <form id="survey-form">
+        <div class="form-control">
+          <span id="name-label">Name</span>
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <span id="email-label">Email</span>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+          />
+          <span id="number-label">Age (Optional)</span>
+          <input
+            type="number"
+            min="10"
+            max="99"
+            id="number"
+            placeholder="Age"
+            required
+          />
+        </div>
+
+        <!-- Dropdown section -->
+        <p class="dropdown-title">
+          Which option best describes your current role?
+        </p>
+        <div class="dropdown">
+          <button
+            class="btn btn-light dropdown-toggle"
+            id="dropdown"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Select current role
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Student</a></li>
+            <li><a class="dropdown-item" href="#">Full Time job</a></li>
+            <li><a class="dropdown-item" href="#">Full Time Learner</a></li>
+            <li><a class="dropdown-item" href="#">Prefer not to say</a></li>
+            <li><a class="dropdown-item" href="#">Other</a></li>
+          </ul>
+        </div>
+
+        <!-- Radios Check -->
+        <section class="check">
+          <p class="check-title">
+            Would you recommend freeCodeCamp to a friend?
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Definitely
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Maybe
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Not sure
+            </label>
+          </div>
+        </section>
+
+        <!-- Dropdown Section 2 -->
+        <p class="dropdown-title">
+          What is your favorite feature of freeCodeCamp?
+        </p>
+        <div class="dropdown">
+          <button
+            class="btn btn-light dropdown-toggle"
+            id="dropdown"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Select an option
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Challenges</a></li>
+            <li><a class="dropdown-item" href="#">Projects</a></li>
+            <li><a class="dropdown-item" href="#">Community</a></li>
+            <li><a class="dropdown-item" href="#">Open Source</a></li>
+          </ul>
+        </div>
+
+        <!-- Check 2-->
+        <section class="check">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Front-end Projects
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Back-end Projects
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Data Visualization
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Challenges
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Challenges
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Gitter help rooms
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Videos
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Wiki
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Forum
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="check-2"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Additional Courses
+            </label>
+          </div>
+        </section>
+
+        <!-- Other comment -->
+        <span>Any comments or suggestions?</span>
+        <input
+          type="text"
+          id="text-area"
+          name="Name"
+          placeholder="Enter your comment here..."
+          required
+        />
+
+        <!-- Submit -->
+        <input type="submit" value="Submit" id="submit"
+      </form>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
